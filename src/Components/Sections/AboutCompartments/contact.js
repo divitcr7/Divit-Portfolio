@@ -6,9 +6,9 @@ export default function Contact() {
       <li className="list-group-item pe-cursor  p-0 pt-3  ">
         <a
           className="d-flex gap-2 link-light link-offset-2 link-underline-opacity-0"
-          href="divit.patidar@gmail.com"
-        >
-          <i className="bi bi-envelope-at"></i>Divit
+          href="mailto:divit.patidar@gmail.com"
+          >
+          <i className="bi bi-envelope-at"></i>Mail: Divit
         </a>
       </li>
       <li className="list-group-item pe-cursor p-0 ">
