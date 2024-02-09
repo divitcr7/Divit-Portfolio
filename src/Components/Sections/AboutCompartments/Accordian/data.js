@@ -28,7 +28,7 @@ const data = [
         * Hire me! I'm not just fluent in coding , but also in the art of turning coffee into code *
         </p>
         <p>
-        Open Source? I've None :( But!! I will I will soon!!!
+        Open Source? I'm building one Right Now!!!
         </p>
       </div>
     ),
@@ -81,32 +81,29 @@ const data = [
       Rice University
     </a> - Research Assistant
   </h3>
-  <span class="small text-white">Oct 23 =&gt; Present, Texas</span>
+  <span class="small text-white"> Aug-23 =&gt; Present, Texas</span>
 </div>
-<div className="d-flex row gap-2">
-  <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
-    <a href="https://alleo.ai/" title="Alleo.ai" style={{ color: '#3bc0a5' }}>
-      Alleo.ai
-    </a> - Software Engineer
-  </h3>
-  <span className="small text-white">Apr 23 =&gt; Aug 23, Texas</span>
-</div>
-<div className="d-flex row gap-2">
-  <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
-    <a href="https://illinois.edu/" title="UIUC" style={{ color: '#3bc0a5' }}>
-      UIUC
-    </a> - Software Engineer
-  </h3>
-  <span className="small text-white">Feb 23 =&gt; Apr 23, Illinois</span>
-</div>
+
 <div className="d-flex row gap-2">
   <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
     <a href="https://www.footstepsusa.com/" title="Amazon (Footsteps LLC)" style={{ color: '#3bc0a5' }}>
       Amazon(Footsteps LLC)
     </a> - Software Engineer
   </h3>
-  <span className="small text-white">Jun 22 =&gt; Feb 23, California</span>
+  <span className="small text-white">Jun-22 =&gt; Apr-23, California</span>
 </div>
+
+
+<div className="d-flex row gap-2">
+  <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
+    <a href="https://alleo.ai/" title="Alleo.ai" style={{ color: '#3bc0a5' }}>
+      Alleo.ai
+    </a> - Software Engineer
+  </h3>
+  <span className="small text-white">Jan-22 =&gt; Apr-22, Texas</span>
+</div>
+
+
 
 
 </div>
