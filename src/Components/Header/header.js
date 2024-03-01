@@ -43,7 +43,7 @@ export default function Header() {
 
             <ul className=" navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href={"https://docs.google.com/document/d/1To8I27XuhN9WAA66K7yO-h5wiUPtB9xXtmZ2aXKCEHs/edit?usp=sharing"}>
+                <a className="nav-link" href={"https://docs.google.com/document/d/1_CZWQ8697iTwHr5COi0I3Tikz9SfYmnRenCOVXfy_nc/edit?usp=sharing"}>
                   _resume
                 </a>
               </li>

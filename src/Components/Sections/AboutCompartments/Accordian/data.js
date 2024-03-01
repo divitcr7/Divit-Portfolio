@@ -44,7 +44,7 @@ const data = [
             Rice University
           </a> - Masters Computer Science
         </h3>
-        <span className="small text-white">Aug 23 => May 25 (Texas, USA)</span>
+        <span className="small text-white">Aug 23 => Dec 24 (Texas, USA)</span>
       </div>
       <div className="d-flex row gap-2">
         <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
