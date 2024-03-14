@@ -4,7 +4,7 @@ export default function Header() {
     <div className="main_header">
       <nav className="navbar navbar-expand-lg navbar-dark ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand text-color-white" href="/">
             Divit_yaar
           </a>
           <button
@@ -30,20 +30,17 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about-me">
+                <a className="nav-link active" href="#about-me">
+                  
                   _about_me
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#projects">
-                  _projects
-                </a>
-              </li>
+
             </ul>
 
             <ul className=" navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href={"https://docs.google.com/document/d/1_CZWQ8697iTwHr5COi0I3Tikz9SfYmnRenCOVXfy_nc/edit?usp=sharing"}>
+                <a className="nav-link active" href={"https://docs.google.com/document/d/1_CZWQ8697iTwHr5COi0I3Tikz9SfYmnRenCOVXfy_nc/edit?usp=sharing"}>
                   _resume
                 </a>
               </li>

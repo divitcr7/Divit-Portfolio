@@ -40,12 +40,7 @@ export default function About() {
             >
               <i className="bi bi-file-person "></i>
             </a>
-            <a
-              className="link-offset-2 link-underline-opacity-0 pe-cursor"
-              href="#projects"
-            >
-              <i className="bi bi-cast "></i>
-            </a>
+
             {/* <a
               className="link-offset-2 link-underline-opacity-0 pe-cursor"
               href="#contact"
