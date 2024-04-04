@@ -31,16 +31,19 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <a className="nav-link active" href="#about-me">
-                  
                   _about_me
                 </a>
               </li>
-
             </ul>
 
             <ul className=" navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" href={"https://docs.google.com/document/d/1_CZWQ8697iTwHr5COi0I3Tikz9SfYmnRenCOVXfy_nc/edit?usp=sharing"}>
+                <a
+                  className="nav-link active"
+                  href={
+                    "https://docs.google.com/document/d/1XFflapJKAkUJK-GXP4_XW4pOZ37cabFFFdAYJRTMA18/edit?usp=sharing"
+                  }
+                >
                   _resume
                 </a>
               </li>

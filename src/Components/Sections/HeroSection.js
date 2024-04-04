@@ -17,7 +17,7 @@ export default function HeroSection() {
                 // complete/skip the game to continue website,
               </SyntaxHighlighter>
               <SyntaxHighlighter language="javascript" style={dracula}>
-                // I'd Suggest play a little? 
+                // I'd Suggest play a little?
               </SyntaxHighlighter>
 
               <SyntaxHighlighter
@@ -29,9 +29,21 @@ export default function HeroSection() {
               </SyntaxHighlighter>
             </div>
             <div className="myLinks gap-3 d-flex mt-5">
-              <a href={"https://docs.google.com/document/d/1_CZWQ8697iTwHr5COi0I3Tikz9SfYmnRenCOVXfy_nc/edit?usp=sharing"} className="btn solidBtn solidBig">
-                _resume              <i className="bi bi-file-earmark-person-fill"></i>
-
+              <a
+                href={
+                  "https://docs.google.com/document/d/1XFflapJKAkUJK-GXP4_XW4pOZ37cabFFFdAYJRTMA18/edit?usp=sharing"
+                }
+                className="btn solidBtn solidBig"
+              >
+                _resume <i className="bi bi-file-earmark-person-fill"></i>
+              </a>
+              <a
+                href={
+                  "https://www.figma.com/proto/exOf5kS8Qfa8JNzRrsIG73/Divit---Design-Portfolio?type=design&node-id=1-2&t=yt4Z4O5349KpPmbh-1&scaling=min-zoom&page-id=0%3A1"
+                }
+                className="btn solidBtn solidBig"
+              >
+                _figma <i className="bi bi-file-earmark-person-fill"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/divit-patidar-software-engineer/"
