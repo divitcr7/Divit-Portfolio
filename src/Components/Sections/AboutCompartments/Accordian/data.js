@@ -52,7 +52,7 @@ const data = [
           GITAM University
           </a> - BTech Computer Science
         </h3>
-        <span className="small text-white">Jul 19 => Mar 23 (Vizag, India)</span>
+        <span className="small text-white">Jul 19 => Mar 23</span>
       </div>      
       </div>
     )
@@ -74,15 +74,40 @@ const data = [
     id: 3,
     title: "experience",
     content: (
+
+
+      
 <div className="experience gap-3 d-flex row">
+
+
+<div className="d-flex row gap-2">
+  <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
+    <a href="https://healthplan.memorialhermann.org/" title="UTH - Memorial Hermann Health System " style={{ color: '#3bc0a5' }}>
+     M Hermann Health 
+        </a> - Application Engineer 
+  </h3>
+  <span className="small text-white">Aug-24 =&gt; Oct-24, Houston</span>
+</div>
+
+<div className="d-flex row gap-2">
+  <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
+    <a href="openstax.org" title="Rice University" style={{ color: '#3bc0a5' }}>
+        OpenStax
+     </a> - UI Engineer
+  </h3>
+  <span class="small text-white"> Oct-23 =&gt; Mar-24, Houston, Texas</span>
+</div>
+
+
 <div className="d-flex row gap-2">
   <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
     <a href="rice.edu" title="Rice University" style={{ color: '#3bc0a5' }}>
       Rice University
     </a> - Research Assistant
   </h3>
-  <span class="small text-white"> Aug-23 =&gt; Present, Texas</span>
+  <span class="small text-white"> Oct-23 =&gt; Mar-24, Houston, Texas</span>
 </div>
+
 
 <div className="d-flex row gap-2">
   <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
@@ -90,22 +115,8 @@ const data = [
       Amazon(Footsteps LLC)
     </a> - Software Engineer
   </h3>
-  <span className="small text-white">Jun-22 =&gt; Apr-23, California</span>
+  <span className="small text-white">Sep-21 =&gt; Jun-23, Austin, Texas</span>
 </div>
-
-
-<div className="d-flex row gap-2">
-  <h3 style={{ color: 'white', transition: 'color 0.3s ease-in-out' }}>
-    <a href="https://alleo.ai/" title="Alleo.ai" style={{ color: '#3bc0a5' }}>
-      Alleo.ai
-    </a> - Software Engineer
-  </h3>
-  <span className="small text-white">Jan-22 =&gt; Apr-22, Texas</span>
-</div>
-
-
-
-
 </div>
 
     ),
