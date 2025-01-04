@@ -11,7 +11,7 @@ export default function HeroSection() {
           <div className="col-md-6 text-start">
             <span className="subTitle"> Hi, I am</span>
             <h1 className="Title"> Divit Patidar</h1>
-            <h2 className="subTitleBottom">{">"} Software Engineer</h2>
+            <h2 className="subTitleBottom">{">"} Full Stack Developer </h2>
             <div className="codeHero mt-5">
               <SyntaxHighlighter language="javascript" style={dracula}>
                 // complete/skip the game to continue website,
@@ -31,22 +31,22 @@ export default function HeroSection() {
             <div className="myLinks gap-3 d-flex mt-5">
               <a
                 href={
-                  "https://docs.google.com/document/d/1XFflapJKAkUJK-GXP4_XW4pOZ37cabFFFdAYJRTMA18/edit?usp=sharing"
+                  "https://docs.google.com/document/d/1flGhtJvwydyWV5hwTuxmyvpWuvdRTma8/edit?usp=sharing&ouid=117794277547202512009&rtpof=true&sd=true"
                 }
                 className="btn solidBtn solidBig"
               >
                 _resume <i className="bi bi-file-earmark-person-fill"></i>
               </a>
-              <a
+              {/* <a
                 href={
                   "https://www.figma.com/proto/exOf5kS8Qfa8JNzRrsIG73/Divit---Design-Portfolio?type=design&node-id=1-2&t=yt4Z4O5349KpPmbh-1&scaling=min-zoom&page-id=0%3A1"
                 }
                 className="btn solidBtn solidBig"
               >
                 _figma <i className="bi bi-file-earmark-person-fill"></i>
-              </a>
+              </a> */}
               <a
-                href="https://www.linkedin.com/in/divit-patidar-software-engineer/"
+                href="https://www.linkedin.com/in/divit-patidar/"
                 className="btn solidBtn solidBig"
               >
                 _linkedIn <i className="bi bi-linkedin"></i>

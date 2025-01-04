@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent2">
             <ul className="firstBar navbar-nav  mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="https://www.linkedin.com/in/divit-patidar-software-engineer/">
+                <a className="nav-link" href="https://www.linkedin.com/in/divit-patidar/">
                 <i className="bi bi-linkedin"></i>
                 </a>
               </li>

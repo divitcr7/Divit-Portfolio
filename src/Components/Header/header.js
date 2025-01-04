@@ -41,7 +41,7 @@ export default function Header() {
                 <a
                   className="nav-link active"
                   href={
-                    "https://docs.google.com/document/d/1XFflapJKAkUJK-GXP4_XW4pOZ37cabFFFdAYJRTMA18/edit?usp=sharing"
+                    "https://docs.google.com/document/d/1flGhtJvwydyWV5hwTuxmyvpWuvdRTma8/edit?usp=sharing&ouid=117794277547202512009&rtpof=true&sd=true"
                   }
                 >
                   _resume
