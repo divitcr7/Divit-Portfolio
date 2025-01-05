@@ -29,7 +29,7 @@ function GitHubRepositories() {
     <div className="githubData">
       {repositories.length > 0 ? (
         <div className="border-end">
-          <h3 className="border-bottom  small p-2  m-0">_my_repository</h3>
+          <h3 className="border-bottom  small p-2  m-0">_my_repository (github_api) </h3>
           <div className="row gap-3 projectSidbar  m-0">
             {repositories.slice(0, visibleRepositories).map((repository) => (
               <div className="col border-bottom p-2" key={repository.id}>
