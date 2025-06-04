@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/footer";
 import Home from "./Pages/Home";
 import CommandPalette from "./Components/CommandPalette/CommandPalette";
 import ProjectExplorer from "./Components/ProjectExplorer/ProjectExplorer";
+import GitHubActivity from "./Components/GitHubActivity/GitHubActivity";
 import ThemeToggle from "./Components/ThemeToggle/ThemeToggle";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -94,6 +95,7 @@ export default function App() {
         
         {/* Enhanced Features */}
         <ThemeToggle />
+        <GitHubActivity />
         
         <CommandPalette 
           isOpen={isCommandPaletteOpen}
