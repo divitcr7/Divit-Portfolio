@@ -8,7 +8,6 @@ import Home from "./Pages/Home";
 import CommandPalette from "./Components/CommandPalette/CommandPalette";
 import ProjectExplorer from "./Components/ProjectExplorer/ProjectExplorer";
 import GitHubActivity from "./Components/GitHubActivity/GitHubActivity";
-import ThemeToggle from "./Components/ThemeToggle/ThemeToggle";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
 export default function App() {
@@ -94,7 +93,6 @@ export default function App() {
         <Footer />
         
         {/* Enhanced Features */}
-        <ThemeToggle />
         <GitHubActivity />
         
         <CommandPalette 
