@@ -1,7 +1,7 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import TicTacToe from "../TikTok";
+import DraggableTicTacToe from "../DraggableTicTacToe";
 
 export default function HeroSection() {
   return (
@@ -54,7 +54,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="col-md-6 text-end gameToe justify-content-center d-flex">
-            <TicTacToe></TicTacToe>
+            <DraggableTicTacToe />
           </div>
         </div>
       </div>

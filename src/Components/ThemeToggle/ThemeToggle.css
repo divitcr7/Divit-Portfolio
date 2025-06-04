@@ -1,0 +1,90 @@
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--dark);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1001;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.theme-toggle:hover {
+  background: var(--border);
+  border-color: var(--orange);
+  transform: translateY(-1px);
+}
+
+.theme-toggle.transitioning {
+  animation: terminalFlicker 0.2s ease-in-out;
+}
+
+.terminal-prompt {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.toggle-command {
+  color: var(--text);
+  font-size: 11px;
+}
+
+.toggle-icon {
+  color: var(--orange);
+  font-size: 12px;
+}
+
+@keyframes terminalFlicker {
+  0% { opacity: 1; }
+  25% { opacity: 0.3; }
+  50% { opacity: 1; }
+  75% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* Light theme styles */
+.light-theme .theme-toggle {
+  background: #ffffff;
+  border-color: #e5e5e5;
+  color: #333333;
+}
+
+.light-theme .terminal-prompt {
+  color: #ff6b35;
+}
+
+.light-theme .toggle-command {
+  color: #666666;
+}
+
+.light-theme .toggle-icon {
+  color: #ff6b35;
+}
+
+.light-theme .theme-toggle:hover {
+  background: #f5f5f5;
+  border-color: #ff6b35;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  
+  .toggle-command {
+    display: none;
+  }
+} 

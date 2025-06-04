@@ -1,5 +1,15 @@
 import React from "react";
 export default function Header() {
+  const triggerCommandPalette = () => {
+    // Trigger the keyboard event for Ctrl+K
+    const event = new KeyboardEvent('keydown', {
+      key: 'k',
+      ctrlKey: true,
+      bubbles: true
+    });
+    document.dispatchEvent(event);
+  };
+
   return (
     <div className="main_header">
       <nav className="navbar navbar-expand-lg navbar-dark ">
@@ -37,6 +47,16 @@ export default function Header() {
             </ul>
 
             <ul className=" navbar-nav ms-auto">
+              <li className="nav-item">
+                <button
+                  className="nav-link active command-palette-trigger"
+                  onClick={triggerCommandPalette}
+                  title="Open Command Palette (Ctrl+K)"
+                >
+                  <i className="bi bi-command"></i>
+                  _cmd
+                </button>
+              </li>
               <li className="nav-item">
                 <a
                   className="nav-link active"

@@ -10,6 +10,30 @@
   --white: #fff;
   --border: #1e2d3d;
 }
+
+/* Light theme variables */
+.light-theme {
+  --primary: #f8f9fa;
+  --orange: #ff6b35;
+  --text: #6c757d;
+  --dark: #ffffff;
+  --white: #333333;
+  --border: #e5e5e5;
+}
+
+/* Theme transition effect */
+.theme-transition {
+  animation: themeFlicker 0.2s ease-in-out;
+}
+
+@keyframes themeFlicker {
+  0% { opacity: 1; }
+  25% { opacity: 0.7; }
+  50% { opacity: 1; }
+  75% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
 ::-moz-selection {
   background: rgba(255, 255, 255, 0.2);
 }
@@ -583,4 +607,567 @@ div .l5 {
 
 .experience h3 {
   font-size: 20px;
+}
+
+/* Enhanced Features CSS */
+
+/* Light theme body styling */
+.light-theme body {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.light-theme .main_header {
+  background: rgba(255,255,255,.9);
+  box-shadow: 0 4px 30px rgba(0,0,0,.05);
+}
+
+/* GitHub Calendar Section */
+.github-calendar-section {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Draggable Tic Tac Toe Styles */
+.draggable-game-container {
+  background: var(--dark);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: 'Fira Code', monospace;
+  position: relative;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.draggable-game-container.expanded {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(1.2) !important;
+  z-index: 10000 !important;
+}
+
+.game-header {
+  background: var(--border);
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  cursor: move;
+  user-select: none;
+}
+
+.game-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.game-title i {
+  color: var(--orange);
+}
+
+.window-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.control-btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn.minimize {
+  background: #ffbd2e;
+  color: #000;
+}
+
+.control-btn.expand {
+  background: #28ca42;
+  color: #000;
+}
+
+.control-btn.close {
+  background: #ff5f57;
+  color: #000;
+}
+
+.control-btn:hover {
+  transform: scale(1.1);
+}
+
+.game-content {
+  padding: 16px;
+}
+
+.game-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.status-text {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.status-indicator {
+  display: flex;
+  gap: 8px;
+}
+
+.player-indicator {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--border);
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.player-indicator.active {
+  background: var(--orange);
+  color: var(--dark);
+}
+
+.game-result {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.result-text {
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.result-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.game-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Keyboard shortcuts hint */
+.keyboard-shortcuts-hint {
+  position: fixed;
+  bottom: 60px;
+  left: 20px;
+  background: var(--dark);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  color: var(--text);
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.keyboard-shortcuts-hint:hover {
+  opacity: 1;
+}
+
+.keyboard-shortcuts-hint kbd {
+  background: var(--border);
+  color: var(--white);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+  margin: 0 3px;
+  font-weight: 600;
+}
+
+.light-theme .keyboard-shortcuts-hint {
+  background: #ffffff;
+  border-color: #e5e5e5;
+  color: #666666;
+}
+
+.light-theme .keyboard-shortcuts-hint kbd {
+  background: #f5f5f5;
+  color: #333333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .keyboard-shortcuts-hint {
+    display: none;
+  }
+  
+  .BodyContainer {
+    padding: 0px 20px;
+  }
+  
+  .Title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  .MySection {
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .MySection .row {
+    flex-direction: column;
+  }
+  
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  
+  .sidebarAbout {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 15px 0;
+  }
+  
+  .sidebarAbout .d-flex {
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .infoTitle {
+    border-end: none !important;
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  
+  .bodyContainerText {
+    padding: 20px 0;
+  }
+  
+  .GitRepository {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .BodyContainer {
+    padding: 0px 15px;
+  }
+  
+  .Title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+  
+  .subTitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .subTitleBottom {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  
+  .main_header nav {
+    height: auto;
+    min-height: 45px;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-item a {
+    border-left: none !important;
+    border-bottom: 1px solid var(--border);
+    padding: 15px 20px !important;
+  }
+  
+  .firstBar .nav-item:last-child a {
+    border-right: none;
+  }
+  
+  .MainBody {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  
+  .MySection {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  .infoTitle h3 {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .list-group-item {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+  
+  .bodyWraperContent .title,
+  .bodyWraperContent .description {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  .experience h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .experience .small {
+    font-size: 11px;
+  }
+  
+  .projectRow {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .projectRow .colProject {
+    width: 100%;
+  }
+  
+  .projectSidbar {
+    max-height: 300px;
+  }
+  
+  .draggable-game-container {
+    position: relative !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 10px 0;
+  }
+  
+  .draggable-game-container.expanded {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    z-index: auto !important;
+  }
+  
+  .game-header {
+    cursor: default;
+  }
+  
+  .github-calendar-section {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .BodyContainer {
+    padding: 0px 10px;
+  }
+  
+  .Title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  .subTitle {
+    font-size: 14px;
+  }
+  
+  .subTitleBottom {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .navbar-brand {
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .navbar-nav .nav-item a {
+    padding: 12px 15px !important;
+    font-size: 12px;
+  }
+  
+  .main_header nav,
+  .main_footer footer {
+    padding: 0 10px;
+  }
+  
+  .Footer-brand {
+    margin: 0px 20px 0px 0px;
+    font-size: 12px;
+  }
+  
+  .MySection {
+    padding: 0 5px;
+  }
+  
+  .infoTitle h3 {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .bodyWraperContent .title,
+  .bodyWraperContent .description {
+    font-size: 12px;
+    padding: 6px;
+  }
+  
+  .experience h3 {
+    font-size: 14px;
+  }
+  
+  .btn {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  
+  .gameToeBox {
+    padding: 15px;
+  }
+  
+  .btnTic {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+  }
+  
+  .skill-bar {
+    width: 12rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Mobile landscape orientation */
+@media (max-width: 926px) and (orientation: landscape) {
+  .MySection {
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .Title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  
+  .MainBody {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .pe-cursor {
+    cursor: default;
+  }
+  
+  .btn:hover,
+  .solidBtn:hover,
+  .outlinebtn:hover {
+    transform: none;
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .Title {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Command Palette Trigger Button */
+.command-palette-trigger {
+  background: none !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.command-palette-trigger:hover {
+  background: var(--border) !important;
+  transform: translateY(-1px);
+}
+
+.command-palette-trigger i {
+  font-size: 14px;
+}
+
+/* Mobile Navigation Improvements */
+@media (max-width: 768px) {
+  .main_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .navbar-collapse {
+    background: var(--dark);
+    border-top: 1px solid var(--border);
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .command-palette-trigger {
+    font-size: 12px;
+  }
+  
+  .command-palette-trigger i {
+    font-size: 12px;
+  }
 }

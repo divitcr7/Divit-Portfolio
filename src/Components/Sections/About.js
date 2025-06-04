@@ -5,6 +5,7 @@ import data from "./AboutCompartments/Accordian/data";
 import Title from "./AboutCompartments/Accordian/Title";
 import Content from "./AboutCompartments/Accordian/Content";
 import GitHubProfile from "./AboutCompartments/GitHubProfile";
+
 export default function About() {
   const [activeTab, setActiveTab] = useState(data[0].id);
 
@@ -30,7 +31,7 @@ export default function About() {
           <div className="d-flex flex-column gap-4 ">
             <a
               className=" pe-cursor link-offset-2 link-underline-opacity-0"
-              href="#"
+              href="#profile"
             >
               <i className="bi bi-house "></i>
             </a>
