@@ -29,14 +29,20 @@ const data = [
     content: (
       <div className="text-white" id="bio">
         <p>
-          As a Software Engineer, I've worked at various companies where i
-          learnt & crafted software that's not just stashed away.
+          Hi, I'm a Software Engineer. I break things until they work.
         </p>
         <p>
-          * Hire me! I'm not just fluent in coding , but also in the art of
-          turning coffee into code *
+          Fluent in Python, JavaScript, and apologizing to QA.
         </p>
-        <p>Open Source? I'm building one Right Now!!!</p>
+        <p>
+          My hobbies include:
+        </p>
+        <p>
+          Writing "temporary" code that survives five years.
+        </p>
+        <p>
+          Naming variables like foo, bar, and whyGodWhy.
+        </p>
       </div>
     ),
   },
@@ -57,7 +63,7 @@ const data = [
             - Masters Computer Science
           </h3>
           <span className="small text-white">
-            Aug 23 => Dec 24 (Texas, USA)
+            Aug 23 - Dec 24 (Texas, USA)
           </span>
         </div>
         <div className="d-flex row gap-2">
@@ -71,7 +77,7 @@ const data = [
             </a>{" "}
             - BTech Computer Science
           </h3>
-          <span className="small text-white">Jul 19 => Mar 23</span>
+          <span className="small text-white">Jul 19 - Mar 23</span>
         </div>
       </div>
     ),
@@ -115,20 +121,19 @@ const data = [
             >
               <a
                 href="https://benchmarkinsurance.com/"
-                title="Benchmark Insurance Group of Texas"
+                title="Benchmark Insurance Group"
                 style={{
                   color: "#3bc0a5",
                   textDecoration: "none",
                   transition: "color 0.3s ease",
                 }}
               >
-                Benchmark Insurance Group of Texas
+                Benchmark Insurance Group
               </a>
-              <span style={{ color: "#ccc", fontWeight: "400" }}>
-                {" "}
-                • Software Developer
-              </span>
             </h3>
+            <div style={{ color: "#ccc", fontWeight: "400", fontSize: "16px", marginTop: "5px" }}>
+              Software Developer
+            </div>
             <span
               style={{
                 color: "#aaa",
@@ -141,52 +146,7 @@ const data = [
           </div>
         </div>
 
-        {/* Circle.ooo */}
-        <div
-          style={{
-            marginBottom: "20px",
-            padding: "15px",
-            borderRadius: "8px",
-            background: "rgba(0,0,0,0.2)",
-            border: "1px solid rgba(59, 192, 165, 0.3)",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <h3
-              style={{
-                color: "white",
-                margin: "0",
-                fontSize: "18px",
-                fontWeight: "500",
-              }}
-            >
-              <a
-                href="https://circle.ooo"
-                title="Circle.ooo"
-                style={{
-                  color: "#3bc0a5",
-                  textDecoration: "none",
-                  transition: "color 0.3s ease",
-                }}
-              >
-                Circle.ooo
-              </a>
-              <span style={{ color: "#ccc", fontWeight: "400" }}>
-                {" "}
-                • AI Software Developer
-              </span>
-            </h3>
-            <span
-              style={{
-                color: "#aaa",
-                fontSize: "14px",
-                fontWeight: "300",
-              }}
-            >
-              📅 10-Feb-2025 – 04-Mar-2025
-            </span>
-          </div>
-        </div>
+
 
         {/* OpenStax – Rice University */}
         <div
@@ -216,13 +176,12 @@ const data = [
                   transition: "color 0.3s ease",
                 }}
               >
-                OpenStax – Rice University
+                OpenStax
               </a>
-              <span style={{ color: "#ccc", fontWeight: "400" }}>
-                {" "}
-                • Graduate Software Engineering Intern
-              </span>
             </h3>
+            <div style={{ color: "#ccc", fontWeight: "400", fontSize: "16px", marginTop: "5px" }}>
+              Graduate Software Engineering Intern
+            </div>
             <span
               style={{
                 color: "#aaa",
@@ -235,99 +194,7 @@ const data = [
           </div>
         </div>
 
-        {/* EiqServices LLC */}
-        <div
-          style={{
-            marginBottom: "20px",
-            padding: "15px",
-            borderRadius: "8px",
-            background: "rgba(0,0,0,0.2)",
-            border: "1px solid rgba(59, 192, 165, 0.3)",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <h3
-              style={{
-                color: "white",
-                margin: "0",
-                fontSize: "18px",
-                fontWeight: "500",
-              }}
-            >
-              <a
-                href="https://eiqservices.com"
-                title="EiqServices LLC (Eiq Digital)"
-                style={{
-                  color: "#3bc0a5",
-                  textDecoration: "none",
-                  transition: "color 0.3s ease",
-                }}
-              >
-                EiqServices LLC (Eiq Digital)
-              </a>
-              <span style={{ color: "#ccc", fontWeight: "400" }}>
-                {" "}
-                • Software Engineer
-              </span>
-            </h3>
-            <span
-              style={{
-                color: "#aaa",
-                fontSize: "14px",
-                fontWeight: "300",
-              }}
-            >
-              📅 29-May-2024 – 15-Aug-2024
-            </span>
-          </div>
-        </div>
 
-        {/* Rice University */}
-        <div
-          style={{
-            marginBottom: "20px",
-            padding: "15px",
-            borderRadius: "8px",
-            background: "rgba(0,0,0,0.2)",
-            border: "1px solid rgba(59, 192, 165, 0.3)",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-            <h3
-              style={{
-                color: "white",
-                margin: "0",
-                fontSize: "18px",
-                fontWeight: "500",
-              }}
-            >
-              <a
-                href="https://rice.edu"
-                title="Rice University"
-                style={{
-                  color: "#3bc0a5",
-                  textDecoration: "none",
-                  transition: "color 0.3s ease",
-                }}
-              >
-                Rice University
-              </a>
-              <span style={{ color: "#ccc", fontWeight: "400" }}>
-                {" "}
-                • Research & Developer
-              </span>
-            </h3>
-            <span
-              style={{
-                color: "#aaa",
-                fontSize: "14px",
-                fontWeight: "300",
-              }}
-            >
-              📅 10/2023 – 02/2024
-            </span>
-          </div>
-        </div>
 
         {/* Footsteps LLC */}
         <div
@@ -350,20 +217,19 @@ const data = [
             >
               <a
                 href="https://logistics.amazon.com/"
-                title="Footsteps LLC (Amazon DSP)"
+                title="Amazon [Footsteps]"
                 style={{
                   color: "#3bc0a5",
                   textDecoration: "none",
                   transition: "color 0.3s ease",
                 }}
               >
-                Footsteps LLC (Amazon DSP)
+                Amazon [Footsteps]
               </a>
-              <span style={{ color: "#ccc", fontWeight: "400" }}>
-                {" "}
-                • Software Engineer
-              </span>
             </h3>
+            <div style={{ color: "#ccc", fontWeight: "400", fontSize: "16px", marginTop: "5px" }}>
+              Software Engineer
+            </div>
             <span
               style={{
                 color: "#aaa",
@@ -373,130 +239,6 @@ const data = [
             >
               📅 06/2022 – 07/2023
             </span>
-          </div>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: 7,
-    title: "GitHub Stats",
-    content: (
-      <div
-        id="github-stats"
-        style={{ width: "100%", color: "white", fontFamily: "monospace" }}
-      >
-        <div style={{ marginBottom: "20px" }}>
-          <h4 style={{ color: "#eecda3", marginBottom: "15px" }}>
-            📊 GitHub Statistics
-          </h4>
-
-          <div
-            style={{
-              background: "rgba(0,0,0,0.3)",
-              padding: "15px",
-              borderRadius: "8px",
-              marginBottom: "15px",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginBottom: "10px",
-              }}
-            >
-              <span>📁 Repositories:</span>
-              <span style={{ color: "#ff8c00" }}>33</span>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginBottom: "10px",
-              }}
-            >
-              <span>⭐ Stars Earned:</span>
-              <span style={{ color: "#ff8c00" }}>3</span>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginBottom: "10px",
-              }}
-            >
-              <span>🍴 Forks:</span>
-              <span style={{ color: "#ff8c00" }}>1</span>
-            </div>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <span>👥 Followers:</span>
-              <span style={{ color: "#ff8c00" }}>14</span>
-            </div>
-          </div>
-
-          <div
-            style={{
-              background: "rgba(0,0,0,0.3)",
-              padding: "15px",
-              borderRadius: "8px",
-              marginBottom: "15px",
-            }}
-          >
-            <h5 style={{ color: "#eecda3", marginBottom: "10px" }}>
-              💻 Languages
-            </h5>
-            <div style={{ marginBottom: "8px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <span>TypeScript</span>
-                <span style={{ color: "#3178c6" }}>8 repos</span>
-              </div>
-            </div>
-            <div style={{ marginBottom: "8px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <span>JavaScript</span>
-                <span style={{ color: "#f1e05a" }}>6 repos</span>
-              </div>
-            </div>
-            <div style={{ marginBottom: "8px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <span>Python</span>
-                <span style={{ color: "#3572a5" }}>2 repos</span>
-              </div>
-            </div>
-            <div style={{ marginBottom: "8px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <span>CSS</span>
-                <span style={{ color: "#563d7c" }}>3 repos</span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            style={{
-              background: "rgba(0,0,0,0.3)",
-              padding: "15px",
-              borderRadius: "8px",
-            }}
-          >
-            <div style={{ fontSize: "12px", color: "#888" }}>
-              💡 "Developer since 2019"
-            </div>
-          </div>
-
-          <div style={{ marginTop: "15px", textAlign: "center" }}>
-            <a
-              href="https://github.com/divitcr7"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#eecda3",
-                textDecoration: "none",
-                fontSize: "14px",
-              }}
-            >
-              🔗 View Full GitHub Profile
-            </a>
           </div>
         </div>
       </div>

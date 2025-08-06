@@ -5,19 +5,10 @@
   display: block;
   overflow: hidden;
   border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.image-link:hover {
-  transform: scale(1.05);
 }
 
 .image-link img {
-  transition: all 0.3s ease;
-}
-
-.image-link:hover img {
-  filter: brightness(1.1);
+  /* No hover effects */
 }
 
 .project-card {
@@ -25,25 +16,13 @@
   display: block;
   overflow: hidden;
   border-radius: 8px;
-  transition: transform 0.3s ease;
   border: 1px solid var(--border);
   background: var(--dark);
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  border-color: var(--orange);
-}
-
 .project-card img {
-  transition: all 0.3s ease;
   width: 100%;
   display: block;
-}
-
-.project-card:hover img {
-  filter: brightness(1.1) contrast(1.1);
 }
 
 .project-overlay {
@@ -59,13 +38,8 @@
   justify-content: center;
   gap: 8px;
   opacity: 0;
-  transition: opacity 0.3s ease;
   color: var(--white);
   font-family: 'Fira Code', monospace;
-}
-
-.project-card:hover .project-overlay {
-  opacity: 1;
 }
 
 .project-overlay i {
@@ -88,15 +62,61 @@
   margin-top: 8px;
   padding: 4px 8px;
   border-radius: 4px;
-  transition: all 0.2s ease;
   font-family: 'Fira Code', monospace;
-}
-
-.github-link:hover {
-  color: var(--white);
-  background: var(--border);
 }
 
 .github-link i {
   font-size: 14px;
+}
+
+/* Bio section specific styles */
+#bio p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+#bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* Content wrapper improvements */
+.content-wrapper {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.content-wrapper p {
+  margin-bottom: 16px;
+}
+
+.content-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.content-wrapper ul {
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.content-wrapper li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.description {
+  min-height: 200px;
+}
+
+.bodyWraperContent {
+  background: var(--dark);
+}
+
+.catName {
+  background: var(--darker);
+  color: var(--text);
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import DraggableTicTacToe from "../DraggableTicTacToe";
+import DivitCV from "../assets/Divit_CV.pdf";
 
 export default function HeroSection() {
   return (
@@ -30,9 +31,9 @@ export default function HeroSection() {
             </div>
             <div className="myLinks gap-3 d-flex mt-5">
               <a
-                href={
-                  "https://docs.google.com/document/d/1flGhtJvwydyWV5hwTuxmyvpWuvdRTma8/edit?usp=sharing&ouid=117794277547202512009&rtpof=true&sd=true"
-                }
+                href={DivitCV}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn solidBtn solidBig"
               >
                 _resume <i className="bi bi-file-earmark-person-fill"></i>

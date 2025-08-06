@@ -1,4 +1,5 @@
 import React from "react";
+import DivitCV from "../assets/Divit_CV.pdf";
 export default function Header() {
   const triggerCommandPalette = () => {
     // Trigger the keyboard event for Ctrl+K
@@ -60,9 +61,9 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   className="nav-link active"
-                  href={
-                    "https://docs.google.com/document/d/1flGhtJvwydyWV5hwTuxmyvpWuvdRTma8/edit?usp=sharing&ouid=117794277547202512009&rtpof=true&sd=true"
-                  }
+                  href={DivitCV}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   _resume
                 </a>

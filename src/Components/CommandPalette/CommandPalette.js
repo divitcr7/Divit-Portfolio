@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './CommandPalette.css';
+import DivitCV from '../assets/Divit_CV.pdf';
 
 const commands = [
   { id: 'bio', label: 'Go to Bio', action: () => scrollToSection('bio'), icon: 'bi-person' },
@@ -9,7 +10,7 @@ const commands = [
   { id: 'experience', label: 'Go to Experience', action: () => scrollToSection('experience'), icon: 'bi-briefcase' },
   { id: 'projects', label: 'Go to Projects', action: () => scrollToSection('projects'), icon: 'bi-folder' },
   { id: 'game', label: 'Open Tic Tac Toe', action: () => scrollToSection('profile'), icon: 'bi-controller' },
-  { id: 'resume', label: 'View Resume', action: () => window.open('https://docs.google.com/document/d/1flGhtJvwydyWV5hwTuxmyvpWuvdRTma8/edit?usp=sharing&ouid=117794277547202512009&rtpof=true&sd=true'), icon: 'bi-file-earmark-person' },
+  { id: 'resume', label: 'View Resume', action: () => window.open(DivitCV, '_blank'), icon: 'bi-file-earmark-person' },
   { id: 'github', label: 'View GitHub', action: () => window.open('https://github.com/divitcr7'), icon: 'bi-github' },
   { id: 'linkedin', label: 'View LinkedIn', action: () => window.open('https://www.linkedin.com/in/divit-patidar/'), icon: 'bi-linkedin' },
   { id: 'top', label: 'Scroll to Top', action: () => window.scrollTo({ top: 0, behavior: 'smooth' }), icon: 'bi-arrow-up' }
@@ -125,4 +126,4 @@ export default function CommandPalette({ isOpen, onClose }) {
       </AnimatePresence>
     </div>
   );
-} 
+}

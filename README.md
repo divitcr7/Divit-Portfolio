@@ -1,49 +1,72 @@
 
 # Divit's Portfolio
 
-Built with Next.js, CSS and the GitHub API. 
+A React-based personal portfolio website showcasing skills, projects, and experience.
 
-## About Me
+## Features
 
-I'm a software engineer with experience working at Amazon Logistics, Alleo AI, and other tech companies. I'm Currently studying @Rice
+- Modern UI with responsive design
+- Interactive components
+- Project showcase
+- GitHub activity integration
+- Command palette for quick navigation
+- Keyboard shortcuts for improved navigation
 
-As a full-stack developer, I've built web applications using React, Node.js, MongoDB and other technologies. In my spare time, I enjoy contributing to open source projects.
+## Getting Started
 
-## Portfolio Site
+### Prerequisites
 
-This portfolio site showcases my work as a software engineer. It was built using:
+- Node.js (v14 or higher recommended)
+- npm (v6 or higher recommended)
 
-- **Next.js** - React framework for server-rendered React apps
-- **CSS** - For styling and layout
-- **GitHub API** - To display my latest repositories dynamically
+### Installation
 
-The site contains sections for my background, projects, skills, and contact info. It is statically generated and optimized for SEO.
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-## Projects
+### Running the Development Server
 
-The site displays my latest GitHub projects by calling the GitHub API. Some highlighted projects include:
+Start the development server with:
 
-- **My Cool App** - A full stack social app built with React, Node.js and MongoDB
-- **Contributions** - Open source projects and contributions on GitHub
-- **My Portfolio** - This portfolio site itself!
-
-And more...
-
-## Running Locally
-
-To run the app locally, clone the repo and install dependencies:
-
-```bash
-npm install
+```
 npm run dev
 ```
 
-This will start the development server on http://localhost:3000
+or
 
-## Deployment
+```
+npm start
+```
 
-The site is deployed on Vercel and configured to automatically deploy changes from GitHub.
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-## Contact
+### Building for Production
 
-If you'd like to get in touch, you can find my contact info on the portfolio site!
+Create a production build with:
+
+```
+npm run build
+```
+
+## Keyboard Shortcuts
+
+- `Ctrl+K` or `Cmd+K`: Open command palette
+- `1-5`: Navigate to different sections
+- `Escape`: Scroll to top
+
+## Dependencies
+
+- React 18
+- Framer Motion
+- Bootstrap 5
+- React Draggable
+- React Syntax Highlighter
+- React Tabs
+
+## Notes
+
+- The project has some security vulnerabilities in its dependencies. Run `npm audit fix` to address issues that don't require breaking changes.
+- For a complete security fix (including breaking changes), run `npm audit fix --force`.
