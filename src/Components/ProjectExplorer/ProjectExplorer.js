@@ -1,107 +1,180 @@
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import './ProjectExplorer.css';
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import "./ProjectExplorer.css";
 
 const projectDetails = {
-  'Advanced-Banking-Architecture---eBanking': {
-    name: 'Advanced Banking Architecture',
-    description: 'A comprehensive banking system with advanced security features, transaction management, and user authentication.',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
-    githubUrl: 'https://github.com/divitcr7/Advanced-Banking-Architecture---eBanking',
-    liveDemo: null,
-    structure: [
-      { name: 'README.md', type: 'file' },
-      { name: 'package.json', type: 'file' },
-      { name: 'src', type: 'folder', children: [
-        { name: 'components', type: 'folder' },
-        { name: 'services', type: 'folder' },
-        { name: 'utils', type: 'folder' },
-        { name: 'App.js', type: 'file' }
-      ]},
-      { name: 'backend', type: 'folder', children: [
-        { name: 'models', type: 'folder' },
-        { name: 'routes', type: 'folder' },
-        { name: 'middleware', type: 'folder' },
-        { name: 'server.js', type: 'file' }
-      ]}
+  "Pick-A-Pad": {
+    name: "Pick-A-Pad",
+    description:
+      "A full-stack sandbox app for Rice University project with JLL to handle tenant screening, payments, and lease/document uploads all in one place for landlords and agents. Features a screening pipeline that runs credit and background checks (Sandbox Environment from TransUnion same exact Api structure), then scores applicants using custom logic to speed up approvals.",
+    techStack: [
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "TypeScript",
+      "RAG",
+      "Axios",
     ],
-    stats: { stars: 15, forks: 8, language: 'JavaScript' }
+    githubUrl: null,
+    liveDemo: "https://pick-a-pad.com",
+    structure: [
+      { name: "README.md", type: "file" },
+      { name: "package.json", type: "file" },
+      { name: "next.config.js", type: "file" },
+      { name: "tsconfig.json", type: "file" },
+      {
+        name: "src",
+        type: "folder",
+        children: [
+          { name: "app", type: "folder" },
+          { name: "components", type: "folder" },
+          { name: "lib", type: "folder" },
+          { name: "types", type: "folder" },
+          { name: "utils", type: "folder" },
+        ],
+      },
+      {
+        name: "api",
+        type: "folder",
+        children: [
+          { name: "screening", type: "folder" },
+          { name: "payments", type: "folder" },
+          { name: "documents", type: "folder" },
+          { name: "auth", type: "folder" },
+        ],
+      },
+      {
+        name: "database",
+        type: "folder",
+        children: [
+          { name: "migrations", type: "folder" },
+          { name: "models", type: "folder" },
+          { name: "seeds", type: "folder" },
+        ],
+      },
+    ],
+    stats: { stars: 35, forks: 12, language: "TypeScript" },
   },
-  'Health-Appointment-Architecture': {
-    name: 'Health Appointment System',
-    description: 'A modern healthcare appointment booking system with patient management and doctor scheduling.',
-    techStack: ['React', 'Firebase', 'Material-UI', 'Node.js'],
-    githubUrl: 'https://github.com/divitcr7/Health-Appointment-Architecture',
-    liveDemo: null,
+  "Storybook-Design-System": {
+    name: "Storybook Design System",
+    description:
+      "A comprehensive UI Library with 15+ reusable hooks, featuring synced Figma design tokens to Storybook MDX docs, which halved designer-engineer hand-off time. Built as a scalable component library for modern web applications.",
+    techStack: ["React.js", "TypeScript", "Storybook", "Figma", "MDX"],
+    githubUrl: null,
+    liveDemo:
+      "https://benchmark-design-system.netlify.app/?path=/docs/forms-formcontainer--docs",
     structure: [
-      { name: 'README.md', type: 'file' },
-      { name: 'package.json', type: 'file' },
-      { name: 'src', type: 'folder', children: [
-        { name: 'components', type: 'folder' },
-        { name: 'pages', type: 'folder' },
-        { name: 'firebase', type: 'folder' },
-        { name: 'App.js', type: 'file' }
-      ]},
-      { name: 'public', type: 'folder' }
+      { name: "README.md", type: "file" },
+      { name: "package.json", type: "file" },
+      { name: "tsconfig.json", type: "file" },
+      {
+        name: ".storybook",
+        type: "folder",
+        children: [
+          { name: "main.js", type: "file" },
+          { name: "preview.js", type: "file" },
+          { name: "manager.js", type: "file" },
+        ],
+      },
+      {
+        name: "src",
+        type: "folder",
+        children: [
+          { name: "components", type: "folder" },
+          { name: "hooks", type: "folder" },
+          { name: "tokens", type: "folder" },
+          { name: "stories", type: "folder" },
+          { name: "utils", type: "folder" },
+        ],
+      },
+      {
+        name: "design-tokens",
+        type: "folder",
+        children: [
+          { name: "colors.json", type: "file" },
+          { name: "typography.json", type: "file" },
+          { name: "spacing.json", type: "file" },
+        ],
+      },
     ],
-    stats: { stars: 12, forks: 5, language: 'JavaScript' }
+    stats: { stars: 28, forks: 8, language: "TypeScript" },
   },
-  'Trackify-': {
-    name: 'Trackify',
-    description: 'A comprehensive tracking application for managing projects, tasks, and productivity metrics.',
-    techStack: ['React', 'Redux', 'Chart.js', 'Express', 'PostgreSQL'],
-    githubUrl: 'https://github.com/divitcr7/Trackify-',
+  "Trackify-": {
+    name: "Trackify",
+    description:
+      "A comprehensive tracking application for managing projects, tasks, and productivity metrics.",
+    techStack: ["React", "Redux", "Chart.js", "Express", "PostgreSQL"],
+    githubUrl: "https://github.com/divitcr7/Trackify-",
     liveDemo: null,
     structure: [
-      { name: 'README.md', type: 'file' },
-      { name: 'package.json', type: 'file' },
-      { name: 'client', type: 'folder', children: [
-        { name: 'src', type: 'folder' },
-        { name: 'public', type: 'folder' }
-      ]},
-      { name: 'server', type: 'folder', children: [
-        { name: 'routes', type: 'folder' },
-        { name: 'models', type: 'folder' },
-        { name: 'config', type: 'folder' }
-      ]}
+      { name: "README.md", type: "file" },
+      { name: "package.json", type: "file" },
+      {
+        name: "client",
+        type: "folder",
+        children: [
+          { name: "src", type: "folder" },
+          { name: "public", type: "folder" },
+        ],
+      },
+      {
+        name: "server",
+        type: "folder",
+        children: [
+          { name: "routes", type: "folder" },
+          { name: "models", type: "folder" },
+          { name: "config", type: "folder" },
+        ],
+      },
     ],
-    stats: { stars: 20, forks: 12, language: 'JavaScript' }
+    stats: { stars: 20, forks: 12, language: "JavaScript" },
   },
-  'Stegano-LLM': {
-    name: 'Stegano-LLM',
-    description: 'An innovative steganography tool powered by Large Language Models for secure data hiding.',
-    techStack: ['Python', 'TensorFlow', 'Flask', 'OpenCV', 'NumPy'],
-    githubUrl: 'https://github.com/divitcr7/Stegano-LLM',
+  "Stegano-LLM": {
+    name: "Stegano-LLM",
+    description:
+      "An innovative steganography tool powered by Large Language Models for secure data hiding.",
+    techStack: ["Python", "TensorFlow", "Flask", "OpenCV", "NumPy"],
+    githubUrl: "https://github.com/divitcr7/Stegano-LLM",
     liveDemo: null,
     structure: [
-      { name: 'README.md', type: 'file' },
-      { name: 'requirements.txt', type: 'file' },
-      { name: 'src', type: 'folder', children: [
-        { name: 'models', type: 'folder' },
-        { name: 'utils', type: 'folder' },
-        { name: 'api', type: 'folder' },
-        { name: 'main.py', type: 'file' }
-      ]},
-      { name: 'tests', type: 'folder' },
-      { name: 'data', type: 'folder' }
+      { name: "README.md", type: "file" },
+      { name: "requirements.txt", type: "file" },
+      {
+        name: "src",
+        type: "folder",
+        children: [
+          { name: "models", type: "folder" },
+          { name: "utils", type: "folder" },
+          { name: "api", type: "folder" },
+          { name: "main.py", type: "file" },
+        ],
+      },
+      { name: "tests", type: "folder" },
+      { name: "data", type: "folder" },
     ],
-    stats: { stars: 25, forks: 10, language: 'Python' }
-  }
+    stats: { stars: 25, forks: 10, language: "Python" },
+  },
 };
 
 const FileIcon = ({ type, name }) => {
-  if (type === 'folder') return <i className="bi bi-folder text-warning"></i>;
-  
-  const extension = name.split('.').pop();
+  if (type === "folder") return <i className="bi bi-folder text-warning"></i>;
+
+  const extension = name.split(".").pop();
   switch (extension) {
-    case 'js': return <i className="bi bi-filetype-js text-warning"></i>;
-    case 'json': return <i className="bi bi-filetype-json text-info"></i>;
-    case 'md': return <i className="bi bi-markdown text-light"></i>;
-    case 'py': return <i className="bi bi-filetype-py text-primary"></i>;
-    case 'txt': return <i className="bi bi-filetype-txt text-secondary"></i>;
-    default: return <i className="bi bi-file-earmark text-light"></i>;
+    case "js":
+      return <i className="bi bi-filetype-js text-warning"></i>;
+    case "json":
+      return <i className="bi bi-filetype-json text-info"></i>;
+    case "md":
+      return <i className="bi bi-markdown text-light"></i>;
+    case "py":
+      return <i className="bi bi-filetype-py text-primary"></i>;
+    case "txt":
+      return <i className="bi bi-filetype-txt text-secondary"></i>;
+    default:
+      return <i className="bi bi-file-earmark text-light"></i>;
   }
 };
 
@@ -109,12 +182,18 @@ const FileTree = ({ items, level = 0 }) => {
   return (
     <div className="file-tree">
       {items.map((item, index) => (
-        <div key={index} className="file-tree-item" style={{ paddingLeft: `${level * 20 + 10}px` }}>
+        <div
+          key={index}
+          className="file-tree-item"
+          style={{ paddingLeft: `${level * 20 + 10}px` }}
+        >
           <div className="file-tree-content">
             <FileIcon type={item.type} name={item.name} />
             <span className="file-name">{item.name}</span>
           </div>
-          {item.children && <FileTree items={item.children} level={level + 1} />}
+          {item.children && (
+            <FileTree items={item.children} level={level + 1} />
+          )}
         </div>
       ))}
     </div>
@@ -187,28 +266,30 @@ export default function ProjectExplorer({ isOpen, onClose, projectKey }) {
                   <h3>Tech Stack</h3>
                   <div className="tech-stack-items">
                     {project.techStack.map((tech, index) => (
-                      <span key={index} className="tech-item">{tech}</span>
+                      <span key={index} className="tech-item">
+                        {tech}
+                      </span>
                     ))}
                   </div>
                 </div>
 
                 <div className="project-readme">
                   <h3>README.md</h3>
-                  <SyntaxHighlighter 
-                    language="markdown" 
+                  <SyntaxHighlighter
+                    language="markdown"
                     style={dracula}
-                    customStyle={{ 
-                      background: 'var(--border)',
-                      border: '1px solid var(--border)',
-                      borderRadius: '4px'
+                    customStyle={{
+                      background: "var(--border)",
+                      border: "1px solid var(--border)",
+                      borderRadius: "4px",
                     }}
                   >
-{`# ${project.name}
+                    {`# ${project.name}
 
 ${project.description}
 
 ## Technologies Used
-${project.techStack.map(tech => `- ${tech}`).join('\n')}
+${project.techStack.map((tech) => `- ${tech}`).join("\n")}
 
 ## Getting Started
 \`\`\`bash
@@ -225,21 +306,25 @@ npm start
                 </div>
 
                 <div className="project-actions">
-                  <a 
-                    href={project.githubUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="btn solidBtn"
-                  >
-                    <i className="bi bi-github"></i>
-                    View on GitHub
-                  </a>
-                  {project.liveDemo && (
-                    <a 
-                      href={project.liveDemo} 
-                      target="_blank" 
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
                       rel="noopener noreferrer"
-                      className="btn outlinebtn"
+                      className="btn solidBtn"
+                    >
+                      <i className="bi bi-github"></i>
+                      View on GitHub
+                    </a>
+                  )}
+                  {project.liveDemo && (
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={
+                        project.githubUrl ? "btn outlinebtn" : "btn solidBtn"
+                      }
                     >
                       <i className="bi bi-box-arrow-up-right"></i>
                       Live Demo
@@ -253,4 +338,4 @@ npm start
       </AnimatePresence>
     </div>
   );
-} 
+}

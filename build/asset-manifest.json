@@ -1,21 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a69582f8.css",
-    "main.js": "/static/js/main.8462526b.js",
+    "main.js": "/static/js/main.46ea7925.js",
     "static/media/Green.png": "/static/media/Green.c1ac3eddabb797b0631d.png",
     "static/media/Blue.png": "/static/media/Blue.c202c6b25421f395dfce.png",
     "static/media/Divit_CV.pdf": "/static/media/Divit_CV.648503894064052628c8.pdf",
-    "static/media/3.png": "/static/media/3.a4c54a9a5e99c03903b5.png",
-    "static/media/5.png": "/static/media/5.63ea0831b8405693184c.png",
-    "static/media/2.png": "/static/media/2.54ec83a2b7aa0947ea31.png",
-    "static/media/4.png": "/static/media/4.aa0a876cd716ce2a309b.png",
     "static/media/Skills.png": "/static/media/Skills.373613cc893cd3ed2e4f.png",
     "index.html": "/index.html",
     "main.a69582f8.css.map": "/static/css/main.a69582f8.css.map",
-    "main.8462526b.js.map": "/static/js/main.8462526b.js.map"
+    "main.46ea7925.js.map": "/static/js/main.46ea7925.js.map"
   },
   "entrypoints": [
     "static/css/main.a69582f8.css",
-    "static/js/main.8462526b.js"
+    "static/js/main.46ea7925.js"
   ]
 }
