@@ -49,7 +49,7 @@ const CustomProjectCard = ({
     title="Click to explore project"
   >
     <div style={{ fontSize: "36px", marginBottom: "12px", opacity: "0.8" }}>
-      {icon}
+      <i className={icon} style={{ color: "#64748b" }}></i>
     </div>
     <h3
       style={{
@@ -316,7 +316,7 @@ const data = [
               title="Pick-A-Pad"
               subtitle="Rice University Project with JLL • Next.js, Node.js, PostgreSQL"
               gradient="linear-gradient(135deg, #1e293b 0%, #334155 100%)"
-              icon="🏢"
+              icon="bi bi-building"
               projectKey="Pick-A-Pad"
             />
             <div className="project-overlay">
@@ -339,7 +339,7 @@ const data = [
               title="Storybook Design System"
               subtitle="UI Library with 15+ Hooks • React.js, TypeScript, Storybook"
               gradient="linear-gradient(135deg, #0f172a 0%, #1e293b 100%)"
-              icon="📚"
+              icon="bi bi-palette"
               projectKey="Storybook-Design-System"
             />
             <div className="project-overlay">
@@ -362,7 +362,7 @@ const data = [
               title="Trackify"
               subtitle="Project Management App • React, Redux, Chart.js, Express, PostgreSQL"
               gradient="linear-gradient(135deg, #111827 0%, #1f2937 100%)"
-              icon="📊"
+              icon="bi bi-kanban"
               projectKey="Trackify-"
             />
             <div className="project-overlay">
@@ -385,7 +385,7 @@ const data = [
               title="Stegano-LLM"
               subtitle="AI-Powered Steganography Tool • Python, TensorFlow, Flask, OpenCV, NumPy"
               gradient="linear-gradient(135deg, #0c1426 0%, #1e293b 100%)"
-              icon="🤖"
+              icon="bi bi-cpu"
               projectKey="Stegano-LLM"
             />
             <div className="project-overlay">
