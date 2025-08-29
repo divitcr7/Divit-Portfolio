@@ -5,12 +5,24 @@ import data from "./AboutCompartments/Accordian/data";
 import Title from "./AboutCompartments/Accordian/Title";
 import Content from "./AboutCompartments/Accordian/Content";
 import GitHubProfile from "./AboutCompartments/GitHubProfile";
+import { useTabContext } from "../../contexts/TabContext";
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState(data[0].id);
+  const { activeTab, addTab, switchTab } = useTabContext();
+
+  // Use local activeTab if no global activeTab is set
+  const [localActiveTab, setLocalActiveTab] = useState(data[0].id);
+  const currentActiveTab = activeTab || localActiveTab;
 
   const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
+    const selectedTab = data.find((tab) => tab.id === tabId);
+    if (selectedTab) {
+      // Add tab to global context (this will also set it as active)
+      addTab(selectedTab);
+    } else {
+      // Fallback to local state
+      setLocalActiveTab(tabId);
+    }
   };
 
   const [personalInfoOpen, setPersonalInfoOpen] = useState(true);
@@ -68,7 +80,7 @@ export default function About() {
             {personalInfoOpen && (
               <Title
                 tabs={data}
-                activeTab={activeTab}
+                activeTab={currentActiveTab}
                 handleTabClick={handleTabClick}
               ></Title>
             )}
@@ -89,7 +101,7 @@ export default function About() {
           <div className="accordion" id="accordionExample"></div>
         </div>
         <div className="col-md-6 p-0 bodyContainerText">
-          <Content tabs={data} activeTab={activeTab}></Content>
+          <Content tabs={data}></Content>
         </div>
         <div className="col-md-3 p-0 GitRepository ">
           <GitHubProfile></GitHubProfile>

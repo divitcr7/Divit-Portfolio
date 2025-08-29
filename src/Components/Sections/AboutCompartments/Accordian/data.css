@@ -15,9 +15,12 @@
   position: relative;
   display: block;
   overflow: hidden;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--dark);
+  border-radius: 12px;
+  background: transparent;
+}
+
+.custom-project-card {
+  /* No transitions needed since we removed hover effects */
 }
 
 .project-card img {
@@ -31,7 +34,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,34 +42,52 @@
   gap: 8px;
   opacity: 0;
   color: var(--white);
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  /* Removed hover transition and effects */
 }
 
 .project-overlay i {
-  font-size: 24px;
-  color: var(--orange);
+  font-size: 28px;
+  color: #3bc0a5;
+  margin-bottom: 8px;
 }
 
 .project-overlay span {
   font-size: 14px;
   font-weight: 500;
+  color: #f1f5f9;
 }
 
 .github-link {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: var(--text);
+  color: #3bc0a5;
   text-decoration: none;
   font-size: 12px;
-  margin-top: 8px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-family: 'Fira Code', monospace;
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: "Fira Code", monospace;
+  border: 1px solid rgba(59, 192, 165, 0.2);
+  background: rgba(59, 192, 165, 0.05);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.github-link:hover {
+  color: #f1f5f9;
+  background: rgba(59, 192, 165, 0.1);
+  border-color: rgba(59, 192, 165, 0.4);
+  transform: translateY(-1px);
+  text-decoration: none;
 }
 
 .github-link i {
   font-size: 14px;
+  opacity: 0.8;
 }
 
 /* Bio section specific styles */
@@ -82,7 +103,7 @@
 
 /* Content wrapper improvements */
 .content-wrapper {
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-size: 14px;
   line-height: 1.6;
   color: var(--text);
@@ -117,6 +138,91 @@
 .catName {
   background: var(--darker);
   color: var(--text);
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
   font-weight: 500;
+}
+
+/* Tab system styles */
+.tabs-container {
+  background: var(--dark);
+}
+
+.tab-headers {
+  background: var(--darker);
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tab-headers::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-header {
+  transition: all 0.2s ease;
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.tab-header:hover {
+  background: #3a3a3a !important;
+}
+
+.tab-header.active {
+  background: #1e1e1e !important;
+  color: #fff !important;
+  border-bottom: 2px solid #3bc0a5 !important;
+}
+
+.tab-content {
+  background: var(--dark);
+  overflow-y: auto;
+}
+
+/* Projects section improvements */
+#projects {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+#projects .col-md-6 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#projects .mb-3 {
+  margin-bottom: 20px !important;
+}
+
+/* Mobile responsiveness for project cards */
+@media (max-width: 768px) {
+  .custom-project-card {
+    height: 200px !important;
+    padding: 16px !important;
+  }
+
+  .custom-project-card h3 {
+    font-size: 18px !important;
+  }
+
+  .custom-project-card p {
+    font-size: 10px !important;
+  }
+
+  #projects {
+    padding: 0 4px !important;
+  }
+
+  #projects .col-md-6 {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }

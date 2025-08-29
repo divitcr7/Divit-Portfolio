@@ -1,6 +1,6 @@
 import "./styles.css";
 import "./mobStyles.css";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 import Header from "./Components/Header/header";
 import Footer from "./Components/Footer/footer";
@@ -8,7 +8,9 @@ import Home from "./Pages/Home";
 import CommandPalette from "./Components/CommandPalette/CommandPalette";
 import ProjectExplorer from "./Components/ProjectExplorer/ProjectExplorer";
 import GitHubActivity from "./Components/GitHubActivity/GitHubActivity";
+
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { TabProvider } from "./contexts/TabContext";
 
 export default function App() {
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
@@ -19,19 +21,25 @@ export default function App() {
   useEffect(() => {
     const handleKeyDown = (e) => {
       // Command Palette (Ctrl+K or Cmd+K)
-      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
         e.preventDefault();
         setIsCommandPaletteOpen(true);
       }
 
       // Navigation shortcuts (1-5)
-      if (e.key >= '1' && e.key <= '5' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (
+        e.key >= "1" &&
+        e.key <= "5" &&
+        !e.ctrlKey &&
+        !e.metaKey &&
+        !e.altKey
+      ) {
         const shortcuts = {
-          '1': () => scrollToTab('bio'),
-          '2': () => scrollToTab('education'),
-          '3': () => scrollToTab('skills'),
-          '4': () => scrollToTab('experience'),
-          '5': () => scrollToTab('projects')
+          1: () => scrollToTab("bio"),
+          2: () => scrollToTab("education"),
+          3: () => scrollToTab("skills"),
+          4: () => scrollToTab("experience"),
+          5: () => scrollToTab("projects"),
         };
         if (shortcuts[e.key]) {
           e.preventDefault();
@@ -40,21 +48,21 @@ export default function App() {
       }
 
       // Escape to scroll to top
-      if (e.key === 'Escape') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (e.key === "Escape") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
     };
 
     const scrollToTab = (tabName) => {
       // First scroll to about section
-      const aboutSection = document.getElementById('about-me');
+      const aboutSection = document.getElementById("about-me");
       if (aboutSection) {
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
-        
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+
         // Then activate the tab after a short delay
         setTimeout(() => {
-          const buttons = document.querySelectorAll('.list-group-item');
-          buttons.forEach(button => {
+          const buttons = document.querySelectorAll(".list-group-item");
+          buttons.forEach((button) => {
             if (button.textContent.toLowerCase().includes(tabName)) {
               button.click();
             }
@@ -63,8 +71,8 @@ export default function App() {
       }
     };
 
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   const openProjectExplorer = (projectKey) => {
@@ -87,30 +95,35 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <div className="BodyContainer">
-        <Header />
-        <Home />
-        <Footer />
-        
-        {/* Enhanced Features */}
-        <GitHubActivity />
-        
-        <CommandPalette 
-          isOpen={isCommandPaletteOpen}
-          onClose={() => setIsCommandPaletteOpen(false)}
-        />
-        
-        <ProjectExplorer
-          isOpen={isProjectExplorerOpen}
-          onClose={closeProjectExplorer}
-          projectKey={selectedProject}
-        />
-        
-        {/* Keyboard shortcuts indicator */}
-        <div className="keyboard-shortcuts-hint">
-          <span>Press <kbd>Ctrl+K</kbd> for commands, <kbd>1-5</kbd> for navigation, <kbd>Esc</kbd> to top</span>
+      <TabProvider>
+        <div className="BodyContainer">
+          <Header />
+          <Home />
+          <Footer />
+
+          {/* Enhanced Features */}
+          <GitHubActivity />
+
+          <CommandPalette
+            isOpen={isCommandPaletteOpen}
+            onClose={() => setIsCommandPaletteOpen(false)}
+          />
+
+          <ProjectExplorer
+            isOpen={isProjectExplorerOpen}
+            onClose={closeProjectExplorer}
+            projectKey={selectedProject}
+          />
+
+          {/* Keyboard shortcuts indicator */}
+          <div className="keyboard-shortcuts-hint">
+            <span>
+              Press <kbd>Ctrl+K</kbd> for commands, <kbd>1-5</kbd> for
+              navigation, <kbd>Esc</kbd> to top
+            </span>
+          </div>
         </div>
-      </div>
+      </TabProvider>
     </ThemeProvider>
   );
 }

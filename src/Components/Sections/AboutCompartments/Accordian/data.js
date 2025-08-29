@@ -27,54 +27,123 @@ const CustomProjectCard = ({
   style,
 }) => (
   <div
+    className="custom-project-card"
     style={{
       ...style,
       background: gradient,
       width: "100%",
-      height: "200px",
+      height: "220px",
       display: "flex",
       flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
+      alignItems: "flex-start",
+      justifyContent: "space-between",
       cursor: "pointer",
       color: "#e2e8f0",
-      textAlign: "center",
       fontFamily: "'Fira Code', monospace",
-      border: "1px solid rgba(255, 255, 255, 0.1)",
-      transition: "all 0.3s ease",
+      border: "1px solid rgba(59, 192, 165, 0.2)",
+      borderRadius: "12px",
+      padding: "20px",
+      position: "relative",
+      overflow: "hidden",
+
+      boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
     }}
     onClick={() =>
       window.openProjectExplorer && window.openProjectExplorer(projectKey)
     }
     title="Click to explore project"
   >
-    <div style={{ fontSize: "36px", marginBottom: "12px", opacity: "0.8" }}>
-      <i className={icon} style={{ color: "#64748b" }}></i>
+    {/* Background accent */}
+    <div
+      style={{
+        position: "absolute",
+        top: "-50%",
+        right: "-20%",
+        width: "120px",
+        height: "120px",
+        background: "rgba(59, 192, 165, 0.1)",
+        borderRadius: "50%",
+        filter: "blur(40px)",
+        zIndex: 0,
+      }}
+    />
+
+    {/* Content */}
+    <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginBottom: "16px",
+        }}
+      >
+        <div
+          style={{
+            fontSize: "28px",
+            color: "#3bc0a5",
+            opacity: "0.9",
+          }}
+        >
+          <i className={icon}></i>
+        </div>
+        <div
+          style={{
+            fontSize: "10px",
+            color: "#64748b",
+            background: "rgba(59, 192, 165, 0.1)",
+            padding: "4px 8px",
+            borderRadius: "4px",
+            border: "1px solid rgba(59, 192, 165, 0.2)",
+          }}
+        >
+          PROJECT
+        </div>
+      </div>
+
+      <h3
+        style={{
+          margin: "0 0 8px 0",
+          fontSize: "20px",
+          fontWeight: "600",
+          fontFamily: "'Fira Code', monospace",
+          color: "#f1f5f9",
+          lineHeight: "1.2",
+        }}
+      >
+        {title}
+      </h3>
+
+      <p
+        style={{
+          margin: "0",
+          fontSize: "11px",
+          opacity: "0.8",
+          lineHeight: "1.4",
+          fontFamily: "'Fira Code', monospace",
+          color: "#cbd5e1",
+          display: "-webkit-box",
+          WebkitLineClamp: 3,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+        }}
+      >
+        {subtitle}
+      </p>
     </div>
-    <h3
+
+    {/* Bottom accent line */}
+    <div
       style={{
-        margin: "0 0 6px 0",
-        fontSize: "18px",
-        fontWeight: "500",
-        fontFamily: "'Fira Code', monospace",
-        color: "#f1f5f9",
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: "2px",
+        background: "linear-gradient(90deg, #3bc0a5, transparent)",
+        opacity: 0.6,
       }}
-    >
-      {title}
-    </h3>
-    <p
-      style={{
-        margin: "0",
-        fontSize: "10px",
-        opacity: "0.7",
-        lineHeight: "1.3",
-        padding: "0 10px",
-        fontFamily: "'Fira Code', monospace",
-        color: "#cbd5e1",
-      }}
-    >
-      {subtitle}
-    </p>
+    />
   </div>
 );
 
@@ -309,7 +378,15 @@ const data = [
     id: 4,
     title: "Projects",
     content: (
-      <div className="row" id="projects" style={{ marginTop: "20px" }}>
+      <div
+        className="row"
+        id="projects"
+        style={{
+          marginTop: "20px",
+          gap: "16px",
+          padding: "0 8px",
+        }}
+      >
         <div className="col-md-6 mb-3">
           <div className="project-card">
             <CustomProjectCard

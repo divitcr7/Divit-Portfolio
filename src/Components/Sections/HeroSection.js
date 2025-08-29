@@ -12,7 +12,7 @@ export default function HeroSection() {
           <div className="col-md-6 text-start">
             <span className="subTitle"> Hi, I am</span>
             <h1 className="Title"> Divit Patidar</h1>
-            <h2 className="subTitleBottom">{">"} Full Stack Developer </h2>
+            <h2 className="subTitleBottom">{">"} Software Developer </h2>
             <div className="codeHero mt-5">
               <SyntaxHighlighter language="javascript" style={dracula}>
                 // complete/skip the game to continue website,
@@ -38,14 +38,7 @@ export default function HeroSection() {
               >
                 _resume <i className="bi bi-file-earmark-person-fill"></i>
               </a>
-              {/* <a
-                href={
-                  "https://www.figma.com/proto/exOf5kS8Qfa8JNzRrsIG73/Divit---Design-Portfolio?type=design&node-id=1-2&t=yt4Z4O5349KpPmbh-1&scaling=min-zoom&page-id=0%3A1"
-                }
-                className="btn solidBtn solidBig"
-              >
-                _figma <i className="bi bi-file-earmark-person-fill"></i>
-              </a> */}
+  
               <a
                 href="https://www.linkedin.com/in/divit-patidar/"
                 className="btn solidBtn solidBig"
