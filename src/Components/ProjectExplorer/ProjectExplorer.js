@@ -5,58 +5,6 @@ import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import "./ProjectExplorer.css";
 
 const projectDetails = {
-  "Pick-A-Pad": {
-    name: "Pick-A-Pad",
-    description:
-      "A full-stack sandbox app for Rice University project with JLL to handle tenant screening, payments, and lease/document uploads all in one place for landlords and agents. Features a screening pipeline that runs credit and background checks (Sandbox Environment from TransUnion same exact Api structure), then scores applicants using custom logic to speed up approvals.",
-    techStack: [
-      "Next.js",
-      "Node.js",
-      "PostgreSQL",
-      "TypeScript",
-      "RAG",
-      "Axios",
-    ],
-    githubUrl: null,
-    liveDemo: "https://pick-a-pad.com",
-    structure: [
-      { name: "README.md", type: "file" },
-      { name: "package.json", type: "file" },
-      { name: "next.config.js", type: "file" },
-      { name: "tsconfig.json", type: "file" },
-      {
-        name: "src",
-        type: "folder",
-        children: [
-          { name: "app", type: "folder" },
-          { name: "components", type: "folder" },
-          { name: "lib", type: "folder" },
-          { name: "types", type: "folder" },
-          { name: "utils", type: "folder" },
-        ],
-      },
-      {
-        name: "api",
-        type: "folder",
-        children: [
-          { name: "screening", type: "folder" },
-          { name: "payments", type: "folder" },
-          { name: "documents", type: "folder" },
-          { name: "auth", type: "folder" },
-        ],
-      },
-      {
-        name: "database",
-        type: "folder",
-        children: [
-          { name: "migrations", type: "folder" },
-          { name: "models", type: "folder" },
-          { name: "seeds", type: "folder" },
-        ],
-      },
-    ],
-    stats: { stars: 35, forks: 12, language: "TypeScript" },
-  },
   "Storybook-Design-System": {
     name: "Storybook Design System",
     description:

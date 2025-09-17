@@ -1,7 +1,7 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import DraggableTicTacToe from "../DraggableTicTacToe";
+import DraggableSnakeGame from "../DraggableSnakeGame";
 import DivitCV from "../assets/Divit_CV.pdf";
 
 export default function HeroSection() {
@@ -15,10 +15,10 @@ export default function HeroSection() {
             <h2 className="subTitleBottom">{">"} Software Developer </h2>
             <div className="codeHero mt-5">
               <SyntaxHighlighter language="javascript" style={dracula}>
-                // complete/skip the game to continue website,
+                // complete/skip the snake game to continue website,
               </SyntaxHighlighter>
               <SyntaxHighlighter language="javascript" style={dracula}>
-                // I'd Suggest play a little?
+                // Use arrow keys to control the snake!
               </SyntaxHighlighter>
 
               <SyntaxHighlighter
@@ -38,7 +38,7 @@ export default function HeroSection() {
               >
                 _resume <i className="bi bi-file-earmark-person-fill"></i>
               </a>
-  
+
               <a
                 href="https://www.linkedin.com/in/divit-patidar/"
                 className="btn solidBtn solidBig"
@@ -48,7 +48,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="col-md-6 text-end gameToe justify-content-center d-flex">
-            <DraggableTicTacToe />
+            <DraggableSnakeGame />
           </div>
         </div>
       </div>

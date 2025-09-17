@@ -185,9 +185,35 @@
 .tab-content {
   background: var(--dark);
   overflow-y: auto;
+  height: calc(100vh - 200px);
 }
 
 /* Projects section improvements */
+.projects-container {
+  max-height: 100%;
+  overflow-y: auto !important;
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+.projects-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+.projects-container::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
 #projects {
   margin-left: -8px;
   margin-right: -8px;

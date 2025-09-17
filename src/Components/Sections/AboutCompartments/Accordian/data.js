@@ -379,105 +379,91 @@ const data = [
     title: "Projects",
     content: (
       <div
-        className="row"
-        id="projects"
+        className="projects-container"
         style={{
-          marginTop: "20px",
-          gap: "16px",
-          padding: "0 8px",
+          height: "100%",
+          overflowY: "auto",
+          paddingRight: "8px",
         }}
       >
-        <div className="col-md-6 mb-3">
-          <div className="project-card">
-            <CustomProjectCard
-              title="Pick-A-Pad"
-              subtitle="Rice University Project with JLL • Next.js, Node.js, PostgreSQL"
-              gradient="linear-gradient(135deg, #1e293b 0%, #334155 100%)"
-              icon="bi bi-building"
-              projectKey="Pick-A-Pad"
-            />
-            <div className="project-overlay">
-              <i className="bi bi-eye"></i>
-              <span>Explore Project</span>
+        <div
+          className="row"
+          id="projects"
+          style={{
+            marginTop: "0",
+            gap: "16px",
+            padding: "0 8px",
+          }}
+        >
+          <div className="col-md-6 mb-3">
+            <div className="project-card">
+              <CustomProjectCard
+                title="Storybook Design System"
+                subtitle="UI Library with 15+ Hooks • React.js, TypeScript, Storybook"
+                gradient="linear-gradient(135deg, #0f172a 0%, #1e293b 100%)"
+                icon="bi bi-palette"
+                projectKey="Storybook-Design-System"
+              />
+              <div className="project-overlay">
+                <i className="bi bi-eye"></i>
+                <span>Explore Project</span>
+              </div>
             </div>
+            <a
+              href="https://benchmark-design-system.netlify.app/?path=/docs/forms-formcontainer--docs"
+              className="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-globe"></i> View Live Docs
+            </a>
           </div>
-          <a
-            href="https://pick-a-pad.com"
-            className="github-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="bi bi-globe"></i> Visit Live Site
-          </a>
-        </div>
-        <div className="col-md-6 mb-3">
-          <div className="project-card">
-            <CustomProjectCard
-              title="Storybook Design System"
-              subtitle="UI Library with 15+ Hooks • React.js, TypeScript, Storybook"
-              gradient="linear-gradient(135deg, #0f172a 0%, #1e293b 100%)"
-              icon="bi bi-palette"
-              projectKey="Storybook-Design-System"
-            />
-            <div className="project-overlay">
-              <i className="bi bi-eye"></i>
-              <span>Explore Project</span>
+          <div className="col-md-6 mb-3">
+            <div className="project-card">
+              <CustomProjectCard
+                title="Trackify"
+                subtitle="Project Management App • React, Redux, Chart.js, Express, PostgreSQL"
+                gradient="linear-gradient(135deg, #111827 0%, #1f2937 100%)"
+                icon="bi bi-kanban"
+                projectKey="Trackify-"
+              />
+              <div className="project-overlay">
+                <i className="bi bi-eye"></i>
+                <span>Explore Project</span>
+              </div>
             </div>
+            <a
+              href="https://github.com/divitcr7/Trackify-"
+              className="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-github"></i> View on GitHub
+            </a>
           </div>
-          <a
-            href="https://benchmark-design-system.netlify.app/?path=/docs/forms-formcontainer--docs"
-            className="github-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="bi bi-globe"></i> View Live Docs
-          </a>
-        </div>
-        <div className="col-md-6 mb-3">
-          <div className="project-card">
-            <CustomProjectCard
-              title="Trackify"
-              subtitle="Project Management App • React, Redux, Chart.js, Express, PostgreSQL"
-              gradient="linear-gradient(135deg, #111827 0%, #1f2937 100%)"
-              icon="bi bi-kanban"
-              projectKey="Trackify-"
-            />
-            <div className="project-overlay">
-              <i className="bi bi-eye"></i>
-              <span>Explore Project</span>
+          <div className="col-md-6 mb-3">
+            <div className="project-card">
+              <CustomProjectCard
+                title="Stegano-LLM"
+                subtitle="AI-Powered Steganography Tool • Python, TensorFlow, Flask, OpenCV, NumPy"
+                gradient="linear-gradient(135deg, #0c1426 0%, #1e293b 100%)"
+                icon="bi bi-cpu"
+                projectKey="Stegano-LLM"
+              />
+              <div className="project-overlay">
+                <i className="bi bi-eye"></i>
+                <span>Explore Project</span>
+              </div>
             </div>
+            <a
+              href="https://github.com/divitcr7/Stegano-LLM"
+              className="github-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-github"></i> View on GitHub
+            </a>
           </div>
-          <a
-            href="https://github.com/divitcr7/Trackify-"
-            className="github-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="bi bi-github"></i> View on GitHub
-          </a>
-        </div>
-        <div className="col-md-6 mb-3">
-          <div className="project-card">
-            <CustomProjectCard
-              title="Stegano-LLM"
-              subtitle="AI-Powered Steganography Tool • Python, TensorFlow, Flask, OpenCV, NumPy"
-              gradient="linear-gradient(135deg, #0c1426 0%, #1e293b 100%)"
-              icon="bi bi-cpu"
-              projectKey="Stegano-LLM"
-            />
-            <div className="project-overlay">
-              <i className="bi bi-eye"></i>
-              <span>Explore Project</span>
-            </div>
-          </div>
-          <a
-            href="https://github.com/divitcr7/Stegano-LLM"
-            className="github-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="bi bi-github"></i> View on GitHub
-          </a>
         </div>
       </div>
     ),
