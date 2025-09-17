@@ -2,7 +2,8 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import DraggableSnakeGame from "../DraggableSnakeGame";
-import DivitCV from "../assets/Divit_CV.pdf";
+// import DivitCV from "../assets/Divit_CV.pdf";
+const DivitCV = "#"; // Placeholder - replace with actual resume URL
 
 export default function HeroSection() {
   return (

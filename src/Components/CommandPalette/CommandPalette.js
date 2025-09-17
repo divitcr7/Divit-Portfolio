@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./CommandPalette.css";
-import DivitCV from "../assets/Divit_CV.pdf";
+// import DivitCV from "../assets/Divit_CV.pdf";
+const DivitCV = "#"; // Placeholder - replace with actual resume URL
 
 const commands = [
   {

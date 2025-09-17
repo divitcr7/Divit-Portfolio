@@ -1,12 +1,13 @@
 import React from "react";
-import DivitCV from "../assets/Divit_CV.pdf";
+// import DivitCV from "../assets/Divit_CV.pdf";
+const DivitCV = "#"; // Placeholder - replace with actual resume URL
 export default function Header() {
   const triggerCommandPalette = () => {
     // Trigger the keyboard event for Ctrl+K
-    const event = new KeyboardEvent('keydown', {
-      key: 'k',
+    const event = new KeyboardEvent("keydown", {
+      key: "k",
       ctrlKey: true,
-      bubbles: true
+      bubbles: true,
     });
     document.dispatchEvent(event);
   };

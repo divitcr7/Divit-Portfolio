@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a69582f8.css",
-    "main.js": "/static/js/main.46ea7925.js",
+    "main.css": "/static/css/main.85309472.css",
+    "main.js": "/static/js/main.5dae440f.js",
     "static/media/Green.png": "/static/media/Green.c1ac3eddabb797b0631d.png",
     "static/media/Blue.png": "/static/media/Blue.c202c6b25421f395dfce.png",
-    "static/media/Divit_CV.pdf": "/static/media/Divit_CV.648503894064052628c8.pdf",
     "static/media/Skills.png": "/static/media/Skills.373613cc893cd3ed2e4f.png",
     "index.html": "/index.html",
-    "main.a69582f8.css.map": "/static/css/main.a69582f8.css.map",
-    "main.46ea7925.js.map": "/static/js/main.46ea7925.js.map"
+    "main.85309472.css.map": "/static/css/main.85309472.css.map",
+    "main.5dae440f.js.map": "/static/js/main.5dae440f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a69582f8.css",
-    "static/js/main.46ea7925.js"
+    "static/css/main.85309472.css",
+    "static/js/main.5dae440f.js"
   ]
 }
